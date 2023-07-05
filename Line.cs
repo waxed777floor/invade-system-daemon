@@ -95,6 +95,7 @@ namespace Notify
         public static void SendToUser(string Msg)
         {
             string strSend = Msg;
+            log.Info($"SendToUser {strSend}");
             SendLineNotify("kxDY1CH2CQT0C4itJo0BS3OytuMA9L5NXWCw6Au1OUY", strSend);
         }
 
@@ -151,7 +152,7 @@ namespace Notify
             response.EnsureSuccessStatusCode();
 
             var responseString = response.Content.ReadAsStringAsync().Result;
-            Console.WriteLine(responseString);
+            log.Info(responseString);
         }
     }
 
