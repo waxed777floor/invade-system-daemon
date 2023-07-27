@@ -48,7 +48,7 @@ namespace invade_system_daemon
                     throw;
                 }
 
-                System.Threading.Thread.Sleep(2 * 60 * 1000);
+                System.Threading.Thread.Sleep(30 * 1000);
             }
         }
 
